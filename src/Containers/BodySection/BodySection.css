@@ -1,0 +1,8 @@
+.Homepage-body{
+    margin: 0px;
+    padding: 30px 60px 30px 60px;
+    height: 100vh;
+    
+    
+    flex-grow: 1;
+}

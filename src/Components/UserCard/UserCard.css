@@ -1,0 +1,17 @@
+.user-card{
+    height: 370px;
+    width: 380px; 
+    background-color: #d8c4ac;
+}
+
+.content{
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+}
+
+.content-key{
+    font-weight: bold; 
+    margin-right: 10px;
+}
