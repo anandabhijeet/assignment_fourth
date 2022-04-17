@@ -2,33 +2,37 @@ import React from "react";
 import { Card, CardContent, Typography } from "@mui/material";
 import "./UserCard.css";
 
-const UserCard = () => {
+const UserCard = ({name, birthday, gender, address, short_bio}) => { 
+  
   return (
-    <Card className="user-card">
+    <Card
+      className="user-card"
+      style={{
+        backgroundColor: "#d8c4ac",
+        
+      }}
+    >
       <CardContent className="card-content">
         <div className="name content">
           <Typography className="content-key">Name:</Typography>
-          <Typography>Abhijeet Anand</Typography>
+          <Typography>{name}</Typography>
         </div>
         <div className="birth-date content">
           <Typography className="content-key"> Birthday: </Typography>
-          <Typography>26-01-2001</Typography>
+          <Typography>{birthday}</Typography>
         </div>
         <div className="gender content">
           <Typography className="content-key">Gender:</Typography>
-          <Typography>Male</Typography>
+          <Typography>{gender}</Typography>
         </div>
         <div className="address content">
           <Typography className="content-key">Address:</Typography>
-          <Typography>Pune</Typography>
+          <Typography>{address}</Typography>
         </div>
         <div className="short-bio content">
           <Typography className="content-key">Intro: </Typography>
           <Typography>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-            porro ea, architecto dolores ipsam delectus cum quo necessitatibus
-            eos ducimus modi voluptatem velit est sit earum deserunt amet
-            voluptatum ullam..?
+            {short_bio}
           </Typography>
         </div>
       </CardContent>

@@ -58,6 +58,10 @@ const NavBar = () => {
               marginRight: "10px",
               color: "#035397",
             }}
+            onClick={()=>{
+              localStorage.clear(); 
+              navigate('/userlist')
+            }}
           >
             Clear List
           </Button> 
