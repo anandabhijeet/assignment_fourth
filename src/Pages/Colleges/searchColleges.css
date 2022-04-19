@@ -1,0 +1,56 @@
+.toggle-switch{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+    padding: 60px 60px 0px 0px;
+}
+.search-brand-logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    color: #8FBDD3;
+}
+
+.search-bar{
+    width: 550px;
+    margin-right: 10px;
+ 
+    
+}
+
+.search-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.search-button{
+    height: 56px;
+
+    
+}
+
+.sized-box{
+    width: 8px;
+}
+
+.college-data-table{
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.card-view{
+    margin-top: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}

@@ -73,6 +73,9 @@ const NavBar = () => {
               marginRight: "10px",
               color: "#035397",
             }}
+            onClick={()=>{
+              navigate('/searchcollege')
+            }}
           >
             Colleges
           </Button>

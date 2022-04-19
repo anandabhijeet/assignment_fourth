@@ -1,0 +1,16 @@
+.data-table{
+    width: 80%;
+}
+
+.table-head{
+    background-color: rgb(247, 202, 148);
+}
+
+#heading{
+    font-weight: bold;
+    
+}
+
+#table-row{
+    background-color: rgb(247, 233, 216);
+}

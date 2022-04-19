@@ -1,13 +1,13 @@
 
-import {React, useEffect, useState} from "react";
+import {React} from "react";
 import UserCard from "../../Components/UserCard/UserCard";
-import "../BodySection/BodySection.css";
+import "../BodySection/HomePageBodySection.css";
 
 const BodySection = () => {
     
   let userDataArray = localStorage.getItem("data");
   let newUserDataArray = JSON.parse(userDataArray);
-  //   console.log(newUserDataArray.length);
+  //   console.log(newUserDataArray.length);A
 
   return (
     <div className="Homepage-body">
