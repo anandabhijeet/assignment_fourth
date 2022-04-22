@@ -14,7 +14,7 @@ const CollegeTableSection = (prop) => {
     
    useEffect(()=>{
        console.log("college table section is live")
-       console.log("prop",prop.data)
+    //    console.log("prop",prop.data)
        
    },[])
   return <div className="data-table"> 

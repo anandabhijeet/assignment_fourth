@@ -8,6 +8,7 @@
 
         const SearchColleges = () => {
         const [collegeData, setCollegeData] = useState([]);
+        console.log("collegeData", collegeData);
 
         const getData = async (college) => { 
             console.log(college);
@@ -17,7 +18,7 @@
             
         };  
 
-        const [checked, setChecked] = useState(true); 
+        const [checked, setChecked] = useState(false); 
         const [college, setCollege] = useState("") 
 
         const handleChange = (e) => {
@@ -26,13 +27,7 @@
         };
 
         const handleToggle = () => {  
-            console.log("toggled")
-            console.log(checked);
-            if(checked){
-                setChecked(false);
-            }else{
-                setChecked(true);
-            }
+            checked?setChecked(false):setChecked(true);
 
         }
 
@@ -73,20 +68,25 @@
                     search
                 </Button>
                 </div>
-            </div> 
+            </div>  
+
+            {/* <CollegeDataCard data={collegeData}/> */}
 
             {
-                checked? <div className="college-data-table">
+                !checked? <div className="college-data-table">
                 <CollegeTableSection data={collegeData} />
-            </div>: <div className="card-view">
+            </div>: <div className="card-view"> 
+
                 {
-                    // <CollegeDataCard/>
-                   collegeData?collegeData?.map((data, index)=>{
+                    // <CollegeDataCard data={collegeData}/>
+                   collegeData.map((data, index)=>{
+                    // console.log(data)
                     
                        <CollegeDataCard data={data} key={index}/> 
-                    console.log("hello");
-                       <CollegeDataCard/>
-                   }):<h1>null</h1>
+                    
+                   }) 
+
+               
                    
                    
                 }

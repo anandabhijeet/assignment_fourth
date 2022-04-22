@@ -7,10 +7,10 @@ const UserCard = ({name, birthday, gender, address, short_bio}) => {
   return (
     <Card
       className="user-card"
-      style={{
-        backgroundColor: "#d8c4ac",
+      // style={{
+      //   backgroundColor: "#e7e1d8",
         
-      }}
+      // }}
     >
       <CardContent className="card-content">
         <div className="name content">

@@ -54,3 +54,7 @@
     align-items: center; 
     flex-wrap: wrap;
 }
+
+.toggle-button{
+    border: 1px solid red;
+}
